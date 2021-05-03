@@ -4,12 +4,10 @@ import MoviesData from './components/Data/MoviesData';
 import MoviesCards from './components/MoviesCards/MoviesCards';
 import CategoriesFilter from './components/CategoriesFilter/CategoriesFilter';
 import ReactPaginate from 'react-paginate';
-import axios from 'axios';
 
 //destructuring all the categories from the data
 const allCategories = [ ...new Set(MoviesData.map((movie)=> movie.category))];
 
-const url = "https://gist.githubusercontent.com/Tayarthouail/6b6aee25b3b9e7167db064140a6c4256/raw/3990148a890e94d44d59c324ec3d5c3afd9070e1/MoviesList.json";
 
 function App() {
   const [categories, setCategories] = useState(allCategories);
@@ -30,8 +28,7 @@ function App() {
     setMoviesList(filterMovie);
   }
 
-
-
+  
   //Pagination
   const moviePerPage = 4;
   const pageCount = Math.ceil(MoviesData.length / moviePerPage);

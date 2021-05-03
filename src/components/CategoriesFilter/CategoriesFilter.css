@@ -1,8 +1,18 @@
 
 
 .select-option {
-    width: 50%;
-    max-width: 50%;
+    width: 30%;
     margin: auto;
     margin-bottom: 30px;
   }
+
+
+  @media screen and (max-width: 992px) {
+    .select-option {
+      width: 50%;
+      max-width: 50%;
+      
+    }
+  
+  }
+  
