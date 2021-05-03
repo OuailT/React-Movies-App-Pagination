@@ -1,0 +1,30 @@
+
+
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 45px;
+    margin: auto;
+  }
+
+
+  /* Responsive */
+@media screen and (max-width: 992px) {
+  .grid-list {
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .grid-list {
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+  
