@@ -2,6 +2,7 @@
 I created this project using React.js, React Paginate, React Select and React hooks.
 
 - Filter movies based on their categories
+- Like or dislike movie
 - Paginations
 - Responsive
 - Modern UI
